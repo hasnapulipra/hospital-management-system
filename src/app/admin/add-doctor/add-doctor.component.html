@@ -1,0 +1,89 @@
+
+<div class="container">
+    <div class="content">
+        <h2 style="color:lightseagreen;">ADD NEW DOCTOR</h2><br><br>
+        <form action="" [formGroup]="myform" (ngSubmit)="submit()">
+        <table class="table" border="none">
+            
+            <tbody>
+                <!-- <tr>
+                    <td data-label="Attribute"></td>
+                    <td data-label="Values"><img src="/assets/images/doctor-profile.jpg" alt="" width="40px;"></td>
+                </tr> -->
+                <tr>
+                    <td data-label="Attribute"><strong>NAME:</strong></td>
+                    <td data-label="Values" colspan="2"><input type="text" formControlName="name"></td>
+                    <div *ngIf="name?.touched && name?.invalid">
+                        <span *ngIf="name?.errors?.['required']" style="color:red;">*Please Enter Name</span>
+                    </div>
+                </tr>
+                <tr>
+                    <td data-label="Attribute"><strong>AGE:</strong></td>
+                    <td data-label="Values" colspan="2"><input type="text" formControlName="age"></td>
+                    <div *ngIf="age?.touched && age?.invalid">
+                        <span *ngIf="age?.errors?.['required']" style="color:red;">*Please Enter Age</span>
+                    </div>
+                </tr>
+                <tr>
+                  <td data-label="Attribute"><strong>GENDER:</strong></td>
+                  <td data-label="Values" colspan="2"><input type="radio" placeholder="gender" value="male" name="Gender">Male
+                    <input type="radio" placeholder="gender" value="female" name="Gender">Female</td>
+                  
+              </tr>
+                <tr>
+                    <td data-label="Attribute"><strong>SPECIALIZATION:</strong></td>
+                    <td data-label="Values" colspan="2"><input type="text" formControlName="special"></td>
+                    <div *ngIf="special?.touched && special?.invalid">
+                        <span *ngIf="special?.errors?.['required']" style="color:red;">*Please Enter Specialization</span>
+                    </div>
+                </tr>
+                <tr>
+                    <td data-label="Attribute"><strong>EXPERIENCE:</strong></td>
+                    <td data-label="Values" colspan="2"><input type="text" formControlName="exp"></td>
+                    <div *ngIf="exp?.touched && exp?.invalid">
+                        <span *ngIf="exp?.errors?.['required']" style="color:red;">*Please Enter Experience</span>
+                    </div>
+                </tr>
+                <tr>
+                    <td data-label="Attribute"><strong>LANGUAGE SPOKEN:</strong></td>
+                    <td data-label="Values" colspan="2"><input type="text" formControlName="lan"></td>
+                    <div *ngIf="lan?.touched && lan?.invalid">
+                        <span *ngIf="lan?.errors?.['required']" style="color:red;">*Please Enter Languages Spoken</span>
+                    </div>
+                </tr>
+                <tr>
+                    <td data-label="Attribute"><strong>MOBILE NO:</strong></td>
+                    <td data-label="Values" colspan="2"><input type="text" formControlName="phone"></td>
+                    <div *ngIf="phone?.touched && phone?.invalid">
+                        <span *ngIf="phone?.errors?.['required']" style="color:red;">*Please Enter Contact Number</span>
+                    </div>
+                </tr>
+                <tr>
+                    <td data-label="Attribute"><strong>EMAIL:</strong></td>
+                    <td data-label="Values" colspan="2"><input type="text" formControlName="email"></td>
+                    <div *ngIf="special?.touched && email?.invalid">
+                        <span *ngIf="email?.errors?.['required']" style="color:red;">*Please Enter Email</span>
+                    </div>
+                </tr>
+                <tr>
+                    <td data-label="Attribute"><strong>SCHEDULE:</strong></td>
+                    <td data-label="Values" colspan="2"><input type="text" formControlName="sdl"></td>
+                    <div *ngIf="sdl?.touched && sdl?.invalid">
+                        <span *ngIf="sdl?.errors?.['required']" style="color:red;">*Please Enter Schedule</span>
+                    </div>
+                </tr>
+                
+                <tr>
+                    <td colspan="2" class="button_row"><a [routerLink]="'add-doctor'"><button class="btn" [disabled]="myform.invalid">Add Doctor</button></a></td>
+                </tr>
+                
+                
+                
+    
+            </tbody>
+        </table>
+        </form>
+        
+    </div>
+</div>
+
