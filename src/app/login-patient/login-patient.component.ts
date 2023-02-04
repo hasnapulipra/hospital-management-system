@@ -26,6 +26,6 @@ export class LoginPatientComponent {
   // }
   dataReceived(formdata:any){
     console.log(formdata)
-    this.router.navigateByUrl("/patient");
+    this.router.navigateByUrl("patient");
   }
 }

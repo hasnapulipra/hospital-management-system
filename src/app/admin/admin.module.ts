@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+import { AdminRoutingModule } from './admin-routing.module';
 import { AdminComponent } from './admin.component';
 import { ViewProfileComponent } from './view-profile/view-profile.component';
 import { PaymentRequestComponent } from './payment-request/payment-request.component';
@@ -8,9 +10,8 @@ import { UpdateDetailsOfDoctorComponent } from './update-details-of-doctor/updat
 import { RecordsComponent } from './records/records.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { RouterModule } from '@angular/router';
-import { AdminRoutingModule } from './admin-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { ViewDoctorComponent } from './view-doctor/view-doctor.component';
 
 
 @NgModule({
@@ -22,11 +23,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     UpdateDetailsOfDoctorComponent,
     RecordsComponent,
     AdminDashboardComponent,
+    ViewDoctorComponent,
   ],
   imports: [
     CommonModule,
-    RouterModule,
     AdminRoutingModule,
+    RouterModule,
     FormsModule,
     ReactiveFormsModule,
   ]

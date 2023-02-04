@@ -26,7 +26,7 @@ export class LoginComponent {
 // }
 dataReceived(formdata:any){
   console.log(formdata)
-  this.router.navigateByUrl("/admin");
+  this.router.navigateByUrl("admin");
 }
 }
  

@@ -11,7 +11,8 @@ import { ViewDoctorComponent } from './view-doctor/view-doctor.component';
 import { ViewProfileComponent } from './view-profile/view-profile.component';
 
 const routes: Routes = [
-  {path:'patient',component:PatientComponent,children:[
+  // { path: '', component: PatientComponent }
+  {path:'',component:PatientComponent,children:[
     {path:'',component:PatientDashboardComponent},
     {path:'patient-dashboard',component:PatientDashboardComponent},
     {path:'appoinment-status',component:AppoinmentStatusComponent},
@@ -23,19 +24,10 @@ const routes: Routes = [
     {path:'view-doctor',component:ViewDoctorComponent},
     {path:'view-profile',component:ViewProfileComponent},
   ]},
-  
 ];
 
-
 @NgModule({
-  declarations: [],
-  imports: [
-    RouterModule.forChild(routes)
-    ],
-    exports: [RouterModule],
-  
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
 })
 export class PatientRoutingModule { }
-
-
-

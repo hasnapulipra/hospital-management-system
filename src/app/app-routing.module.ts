@@ -17,6 +17,9 @@ const routes: Routes = [
   {path:'loginDoctor',component:LoginDoctorComponent},
   {path:'loginPatient',component:LoginPatientComponent},
   {path:'register',component:RegisterComponent},
+  { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
+  { path: 'doctors', loadChildren: () => import('./doctors/doctors.module').then(m => m.DoctorsModule) },
+  { path: 'patient', loadChildren: () => import('./patient/patient.module').then(m => m.PatientModule) },
   // {path:'**',component:PagenotfoundComponent},
   
 ];

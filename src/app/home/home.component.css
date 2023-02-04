@@ -3,17 +3,17 @@
     color:navy;
     margin-top:15%;
     font-size:40px;
-    margin-left:10%;
+    margin-left:5%;
 }
 
 .home_banner_text2{
     position:relative;
     color:navy;
     font-size:40px;
-    margin-left:10%;
+    margin-left:5%;
 }
 .modules{
-    
+    margin-left: 20%;
     margin-top: 50%;
  }
  .site_footer{
@@ -57,4 +57,10 @@
 }
 footer a{
     text-decoration: none;
+}
+@media(max-width:573px){
+    .modules {
+        margin-left: 40%;
+        margin-top: 50%;
+    }
 }
