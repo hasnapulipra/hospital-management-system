@@ -4,6 +4,7 @@
     margin-top:15%;
     font-size:40px;
     margin-left:5%;
+    font-family: 'Poppins', sans-seriff!important;
 }
 
 .home_banner_text2{
@@ -11,16 +12,22 @@
     color:navy;
     font-size:40px;
     margin-left:5%;
+    font-family: 'Poppins', sans-seriff!important;
 }
 .modules{
     margin-left: 20%;
     margin-top: 50%;
  }
+.modules h5 {
+    font-size: 1.25rem!important;
+    font-family: 'Poppins', sans-seriff!important;
+}
  .site_footer{
     padding:0.5em 0;
     background: #F8F8FF;
     font-size: 14px;
-    color: #607d8b;;
+    color: #607d8b;
+    
 }
 .site_footer p:last-child{
     margin-bottom:0;
@@ -35,7 +42,8 @@
     font-size:22px;
     margin-bottom: 28px;
     letter-spacing: .05em;
-    color:#607d8b;;
+    color:#607d8b;
+    font-family: 'Poppins', sans-seriff!important;
 }
 .site_footer .footer-link li{
     line-height: 1.5;

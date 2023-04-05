@@ -43,13 +43,16 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
     line-height: 60px;
     margin-bottom: 20px;
     font-weight: 600;
     border-bottom: 1px solid #fff;
 }
-
+.side-menu .brand-name h1{
+    font-size: calc(1.375rem + 1.5vw)!important;
+    font-family: 'Poppins', sans-seriff!important;
+}
 .side-menu li{
     font-size: 24px;
     padding: 10px 40px;
@@ -66,6 +69,7 @@ h2{
     position: absolute;
     right: 0;
     width: 75vw;
+    
     height: 15vh;
     background: white;
 }
@@ -73,6 +77,7 @@ h2{
     position: fixed;
     top: 0;
     right: 0;
+    /* width: 76.2%; */
     width: 75vw;
     height: 10vh;
     background: white;
@@ -86,6 +91,10 @@ h2{
     width:90%;
     display:flex;
     align-items: center;
+}
+.header .nav h2{
+    font-size: calc(1.325rem + .9vw)!important;
+    font-family: 'Poppins', sans-seriff!important;
 }
 .container .header .nav .user{
     flex:1;
@@ -139,4 +148,13 @@ h2{
     .hospital{
         display: none;
     }
+    .container .header{
+        width: 82%;
+    }
+    @media screen and (max-width: 375px){
+        
+        .container .header{
+            width: 85%;
+        }
+}
 }

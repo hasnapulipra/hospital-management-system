@@ -67,9 +67,17 @@
                 </tr>
                 <tr>
                     <td data-label="Attribute"><strong>SCHEDULE:</strong></td>
-                    <td data-label="Values" colspan="2"><input type="text" formControlName="sdl"></td>
+                    <td data-label="Values" colspan="2"><textarea name="" id="" cols="22" rows="5" formControlName="sdl"></textarea></td>
+                    
                     <div *ngIf="sdl?.touched && sdl?.invalid">
                         <span *ngIf="sdl?.errors?.['required']" style="color:red;">*Please Enter Schedule</span>
+                    </div>
+                </tr>
+                <tr>
+                    <td data-label="Attribute"><strong>IMAGE:</strong></td>
+                    <td data-label="Values" colspan="2"><input type="file" formControlName="image"></td>
+                    <div *ngIf="image?.touched && image?.invalid">
+                        <span *ngIf="image?.errors?.['required']" style="color:red;">*Please Enter Image</span>
                     </div>
                 </tr>
                 

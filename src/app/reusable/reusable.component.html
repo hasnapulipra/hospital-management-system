@@ -31,8 +31,8 @@
            <button class="btn signinbtn" [disabled]="myform.invalid">Sign In</button>
          </div>
         
-         <div class="inputBx">
-           <p>Don't have an account? <a [routerLink]="'register'">Sign Up</a></p>
+         <div class="inputBx" *ngIf="showSignup">
+           <p>Don't have an account? <a [routerLink]="'/register'">Sign Up</a></p>
          </div>
          
        </form>

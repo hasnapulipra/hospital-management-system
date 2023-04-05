@@ -24,8 +24,9 @@ export class LoginPatientComponent {
   //   console.log(this.myform.value)
   //   this.router.navigateByUrl("/patient");
   // }
+  
   dataReceived(formdata:any){
     console.log(formdata)
     this.router.navigateByUrl("patient");
-  }
+   }
 }

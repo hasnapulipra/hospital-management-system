@@ -12,6 +12,14 @@ import { AppoinmentStatusComponent } from './appoinment-status/appoinment-status
 import { ViewDoctorComponent } from './view-doctor/view-doctor.component';
 import { PatientDashboardComponent } from './patient-dashboard/patient-dashboard.component';
 import { RouterModule } from '@angular/router';
+import { AppoinmentHistoryComponent } from './appoinment-history/appoinment-history.component';
+import { MaterialModule } from '../material/material.module';
+
+import { FormsModule } from '@angular/forms';
+import { TreatmentHistoryComponent } from './treatment-history/treatment-history.component';
+import { PrescriptionComponent } from './prescription/prescription.component';
+import { SearchComponent } from './search/search.component';
+
 
 
 @NgModule({
@@ -25,11 +33,19 @@ import { RouterModule } from '@angular/router';
     AppoinmentStatusComponent,
     ViewDoctorComponent,
     PatientDashboardComponent,
+    AppoinmentHistoryComponent,
+    TreatmentHistoryComponent,
+    PrescriptionComponent,
+    SearchComponent,
+    
+    
   ],
   imports: [
     CommonModule,
     RouterModule,
     PatientRoutingModule,
+    MaterialModule,
+    FormsModule,
   ]
 })
 export class PatientModule { }

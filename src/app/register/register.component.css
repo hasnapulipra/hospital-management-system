@@ -35,6 +35,7 @@
     background: lightseagreen;
     left:0;
     bottom:0;
+    top: 0.9em;
 }
 .registration_section .container form .user-details{
     display:flex;
@@ -48,6 +49,9 @@
     margin-bottom:15px;
     
 
+}
+.registration_section span{
+    font-size:16px;
 }
 .registration_section .container form .user-details .input-box .details{
     font-weight:500;
@@ -69,6 +73,20 @@
     /* border-bottom-width:2px;
     transition: all 0.3s ease; */
 }
+.registration_section .container form .user-details .input-box #bgroup{
+    height:45px;
+    width:100%;
+    outline:none;
+    border-radius: 5px;
+    /* padding:2%; */
+    padding-left:15px;
+    border: 1px solid #607d8b;
+    color:#607d8b;
+    background: transparent;
+    font-size: 16px;
+    
+}
+
 .registration_section .container form .user-details .input-box input:focus,
 .registration_section .container form .user-details .input-box input:valid{
     border-color: grey;

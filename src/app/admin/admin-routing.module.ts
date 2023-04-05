@@ -11,6 +11,7 @@ import { ViewProfileComponent } from './view-profile/view-profile.component';
 
 const routes: Routes = [
   {path:'',component:AdminComponent,children:[
+  {path:'',redirectTo:'doctors-dashboard',pathMatch:'full'},
   {path:'',component:AdminDashboardComponent},
   {path:'admin-dashboard',component:AdminDashboardComponent},
   {path:'view-profile',component:ViewProfileComponent},

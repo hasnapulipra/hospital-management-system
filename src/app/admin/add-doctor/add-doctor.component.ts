@@ -16,7 +16,7 @@ export class AddDoctorComponent {
     phone : new FormControl('',[Validators.required]),
     email : new FormControl('',[Validators.required]),
     sdl : new FormControl('',[Validators.required]),
-    
+    image : new FormControl('',[Validators.required]),
   })
   get name(){
     return this.myform.get('name');
@@ -42,6 +42,9 @@ export class AddDoctorComponent {
   }
   get sdl(){
     return this.myform.get('sdl');
+  }
+  get image(){
+    return this.myform.get('image');
   }
   
   submit(){

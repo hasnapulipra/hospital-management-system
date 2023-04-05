@@ -6,6 +6,10 @@
     background: white;
     margin-top: 10%;
 }
+h2 {
+    font-size: 1.5rem!important;
+    font-family: 'Poppins', sans-seriff!important;
+}
 .container .content{
     position: relative;
     margin-top: 0vh;

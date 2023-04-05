@@ -16,6 +16,9 @@ import { LoginPatientComponent } from './login-patient/login-patient.component';
 import { LoginDoctorComponent } from './login-doctor/login-doctor.component';
 import { ReusableComponent } from './reusable/reusable.component';
 
+import { MaterialModule } from './material/material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 @NgModule({
@@ -30,6 +33,8 @@ import { ReusableComponent } from './reusable/reusable.component';
     LoginPatientComponent,
     LoginDoctorComponent,
     ReusableComponent,
+    
+    
 ],
   imports: [
     BrowserModule,
@@ -39,6 +44,8 @@ import { ReusableComponent } from './reusable/reusable.component';
     AdminModule,
     FormsModule,
     ReactiveFormsModule,
+    MaterialModule,
+    BrowserAnimationsModule,
   ],
   exports:[
     ReusableComponent,

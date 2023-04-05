@@ -13,13 +13,16 @@ myform = new FormGroup({
   fname: new FormControl('',[Validators.required,Validators.pattern('^[A-Za-z ]+$')]),
   username: new FormControl('',[Validators.required]),
   email: new FormControl('',[Validators.required,Validators.pattern("^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$")]),
-  phone: new FormControl('',[Validators.required,Validators.pattern('^[0-9]{10}$')]),
-  password: new FormControl('',[Validators.required]),
-  cpassword: new FormControl('',[Validators.required]),
+  // phone: new FormControl('',[Validators.required,Validators.pattern('^[0-9]{10}$')]),
+  phone: new FormControl('',[Validators.required,Validators.pattern('^[6-9]{1}[0-9]{9}$')]),
+  
+  password: new FormControl('',[Validators.required,Validators.pattern('^.{8,}')]),
+  cpassword: new FormControl('',[Validators.required,Validators.pattern('^.{8,}')]),
   address: new FormControl('',[Validators.required]),
   dob : new FormControl('',[Validators.required]),
   age : new FormControl('',[Validators.required,Validators.pattern('^[0-9]+$')]),
   bgroup : new FormControl('',[Validators.required]),
+  gender: new FormControl('',[Validators.required]),
 })
 get fname(){
   return this.myform.get('fname');
@@ -50,6 +53,9 @@ get age(){
 }
 get bgroup(){
   return this.myform.get('bgroup');
+}
+get gender(){
+  return this.myform.get('gender');
 }
 submit(){
   console.log(this.myform.value);

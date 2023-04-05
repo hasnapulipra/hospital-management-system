@@ -2,11 +2,9 @@
 <div class="container">
     <div class="content">
         <h2 style="color:lightseagreen;">LIST OF DOCTORS AND THEIR DEPARTMENT</h2>
-        <div>
-            <input type="text" placeholder="Search By Department or Doctor's Name" style="color:#f5f5f5;">
-        </div>
+        <app-search (searchTextChanged)="onSearchTextEntered($event)"></app-search>
         <br><br>
-        <table class="table" border="none">
+        <!-- <table class="table" border="none">
             <thead>
                 <tr>
                     <th>Name of Doctor</th>
@@ -46,7 +44,38 @@
                 
     
             </tbody>
-        </table>
+        </table> -->
         
+
+        <!-- Cards with media area -->
+
+<div class="cardcontent">
+    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+        <div fxFlex="33%" fxFlex.xs="100%" fxFlex.sm="50%" *ngFor="let d of dataset">
+            <div class="course-container" *ngIf="searchText === '' || d.doctorName.toLowerCase().includes(searchText) || d.specialization.toLowerCase().includes(searchText)">
+                <mat-card class="mat-elevation-z4">
+                    <mat-card-header>
+                        <mat-card-title><b>{{d.doctorName}}</b></mat-card-title>
+                        <mat-card-title>{{d.specialization}}</mat-card-title>
+                    </mat-card-header>
+                    <img mat-card-image src="{{d.image}}" width="140px" height="150px">
+                    <mat-card-content>
+                        <p>{{d.schedule}}</p>
+                        <p>{{d.desc}}</p>
+                        
+                    </mat-card-content>
+                    
+                </mat-card>
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+
     </div>
 </div>

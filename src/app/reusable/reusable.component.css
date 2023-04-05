@@ -43,12 +43,13 @@
 .loginsection .contentBx .formBx h2{
     color:#607d8b;
     font-weight:600;
-    font-size:1.5em;
+    font-size: 1.6em !important;
     text-transform:uppercase;
     margin-bottom: 20px;
     border-bottom:4px solid rgb(19, 187, 179);;
     display:inline-block;
     letter-spacing: 1px;
+    font-family: 'Poppins', sans-seriff!important;
 }
 
 .loginsection .contentBx .formBx .inputBx{
@@ -61,8 +62,9 @@
     display: inline-block;
     color:#607d8b;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 16px!important;
     letter-spacing: 1px;
+    font-family: 'Poppins', sans-seriff!important;
 }
 .loginsection .contentBx .formBx .inputBx input{
     width:100%;
@@ -70,14 +72,15 @@
     outline:none;
     font-weight: 400;
     border:1px solid #607d8b;
-    font-size: 16px;
+    font-size: 16px!important;
     letter-spacing: 1px;
     color:#607d8b;
     background: transparent;
     border-radius: 5px;
+    font-family: 'Poppins', sans-seriff!important;
 }
 .loginsection .contentBx .formBx .inputBx .signinbtn{
-    background: rgb(19, 187, 179);;
+    background: rgb(19, 187, 179);
     color: #fff;
     outline:none;
     border:none;
@@ -93,7 +96,8 @@
     margin-bottom: 10px;
     color:#607d8b;
     font-weight: 400;
-    font-size:14px;
+    font-size:14px!important;
+    font-family: 'Poppins', sans-seriff!important;
 
 }
 .loginsection .contentBx .formBx .inputBx p{

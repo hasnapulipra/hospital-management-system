@@ -32,6 +32,7 @@ h2{
 .side-menu{
     position:fixed;
     background: lightseagreen;
+    /* width:23.7vw; */
     width:23.7vw;
     min-height: 100vh;
     display: flex;
@@ -71,6 +72,7 @@ h2{
     position: fixed;
     top: 0;
     right: 0;
+    /* width: 76.2%; */
     width: 75vw;
     height: 10vh;
     background: white;
@@ -79,6 +81,14 @@ h2{
     justify-content: center;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 10%);
     z-index: 1;
+}
+.side-menu h1 {
+    font-size: calc(1.375rem + 1.5vw)!important;
+    font-family: 'Poppins', sans-seriff!important;
+}
+.header h2 {
+    font-size: calc(1.325rem + .9vw)!important;
+    font-family: 'Poppins', sans-seriff!important;
 }
 .container .header .nav{
     width:90%;

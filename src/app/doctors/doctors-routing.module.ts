@@ -10,6 +10,7 @@ const routes: Routes = [
 
   // { path: '', component: DoctorsComponent }
   {path:'',component:DoctorsComponent,children:[
+    {path:'',redirectTo:'doctors-dashboard',pathMatch:'full'},
     {path:'',component:DoctorsDashboardComponent},
     {path:'doctors-dashboard',component:DoctorsDashboardComponent},
     {path:'my-appoinments',component:MyAppoinmentsComponent},

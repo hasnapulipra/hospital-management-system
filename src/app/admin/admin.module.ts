@@ -12,6 +12,8 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ViewDoctorComponent } from './view-doctor/view-doctor.component';
+import { MaterialModule } from '../material/material.module';
+import { SearchComponent } from './search/search.component';
 
 
 @NgModule({
@@ -24,13 +26,16 @@ import { ViewDoctorComponent } from './view-doctor/view-doctor.component';
     RecordsComponent,
     AdminDashboardComponent,
     ViewDoctorComponent,
+    SearchComponent,
   ],
   imports: [
     CommonModule,
     AdminRoutingModule,
     RouterModule,
     FormsModule,
+    MaterialModule,
     ReactiveFormsModule,
+
   ]
 })
 export class AdminModule { }

@@ -1,10 +1,14 @@
+*{
+   
+    /* font-family: 'Poppins', sans-seriff; */
+}
 .container{
     position: absolute;
     right: 10%;
     width: 58vw;
     
     background: white;
-    margin-top: 14%;
+    margin-top: 10%;
 }
 .container .content{
     position: relative;
@@ -12,7 +16,10 @@
     min-height: 90vh;
     
 }
-   
+.last-appoinments h2 {
+    font-size: calc(1.325rem + .9vw)!important;
+    font-family: 'Poppins', sans-seriff!important;
+}  
 
 /* .container .content .cards{
     padding:20px 15px;

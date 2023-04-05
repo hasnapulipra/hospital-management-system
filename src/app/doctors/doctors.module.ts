@@ -8,6 +8,8 @@ import { MyAppoinmentsComponent } from './my-appoinments/my-appoinments.componen
 import { AddPrescriptionComponent } from './add-prescription/add-prescription.component';
 import { DoctorsDashboardComponent } from './doctors-dashboard/doctors-dashboard.component';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -17,11 +19,13 @@ import { RouterModule } from '@angular/router';
     MyAppoinmentsComponent,
     AddPrescriptionComponent,
     DoctorsDashboardComponent,
+    
   ],
   imports: [
     CommonModule,
     RouterModule,
     DoctorsRoutingModule,
+    FormsModule,
   ]
 })
 export class DoctorsModule { }

@@ -9,8 +9,9 @@ import { Router } from '@angular/router';
 export class ReusableComponent {
   constructor(private router:Router){ }
   @Input() userType:string=""
+  @Input() showSignup: boolean=true
   @Output() emitter = new EventEmitter()
-
+  
 submit(formdata:any){
   console.log(formdata)
   this.emitter.emit(formdata)

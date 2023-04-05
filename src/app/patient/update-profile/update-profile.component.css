@@ -13,6 +13,14 @@
     min-height: 90vh;
     /* background: #f1f1f1; */
 }
+h2{
+    font-size: 1.6rem!important;
+    font-family: 'Poppins', sans-seriff!important;
+  }
+h4{
+    font-size: 1.3rem!important;
+    font-family: 'Poppins', sans-seriff!important;
+  }
 .btn{
     background-color: lightseagreen;
     color:white;
